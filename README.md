@@ -86,7 +86,7 @@ The agent merges internal and external findings to produce a **structured JSON**
 ### **Setup**
 ```bash
 # Clone the repository
-git clone [text](https://github.com/hiteshjha24/Company-roadmap-preperation-agent)
+git clone https://github.com/hiteshjha24/Company-roadmap-preperation-agent
 cd AI-Interview-Roadmap-Agent
 
 # Install dependencies
