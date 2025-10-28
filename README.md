@@ -61,3 +61,66 @@ Performs in-depth analysis to extract and map required skills:
 
 ### 3️⃣ Company & Difficulty Analysis
 Uses **Google Search Tool** to find:
+[{Company} {Role} interview process and difficulty]
+
+From there, it infers:
+- Interview round types (e.g., Coding, System Design, Behavioral)
+- Estimated difficulty level (`Easy`, `Medium`, `Hard`)
+
+---
+
+### 4️⃣ Roadmap Synthesis
+The agent merges internal and external findings to produce a **structured JSON** that includes:
+
+| Field | Description |
+|-------|--------------|
+| `rounds` | Derived from JD & Google Search |
+| `topics` | Categorized skills per round |
+| `difficulty` | Based on company and role complexity |
+| `recommended_order` | Logical learning path |
+
+---
+
+## ⚙️ How to Run
+
+### **Setup**
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd AI-Interview-Roadmap-Agent
+
+# Install dependencies
+pip install langchain-google-genai pydantic python-dotenv
+
+Run the Agent
+python roadmap_agent.py
+
+🧾 Example Outputs
+<details> <summary>🧠 Google Example Output</summary>
+
+{
+    "company": "Google",
+    "role": "Software Development Engineer (SDE) - L3",
+    "rounds": [
+        {
+            "type": "Technical Coding",
+            "topics": ["Data Structures and Algorithms", "Greedy Algorithms", "Dynamic Programming", "Graphs"]
+        },
+        {
+            "type": "System Design",
+            "topics": ["Distributed Systems", "Scaling", "Microservices Architecture", "Load Balancing"]
+        },
+        {
+            "type": "Behavioral",
+            "topics": ["Googliness & Leadership", "Communication", "Conflict Resolution"]
+        }
+    ],
+    "difficulty": "Hard",
+    "recommended_order": [
+        "Data Structures and Algorithms",
+        "System Design Fundamentals",
+        "Python/Go Language Syntax",
+        "Behavioral Interview Preparation"
+    ]
+}
+</details>
