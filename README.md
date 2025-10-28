@@ -19,7 +19,7 @@ It fuses *company-specific data* with *public knowledge* to produce **JSON-based
 
 ## 🚨 Problem Statement
 
-Preparing for a tech interview = 😵‍💫 chaos.  
+Preparing for a tech interview = chaos.  
 Candidates struggle with:
 - Extracting the right keywords from JDs manually.  
 - Researching each company’s unique interview process.  
@@ -86,7 +86,7 @@ The agent merges internal and external findings to produce a **structured JSON**
 ### **Setup**
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone [text](https://github.com/hiteshjha24/Company-roadmap-preperation-agent)
 cd AI-Interview-Roadmap-Agent
 
 # Install dependencies
