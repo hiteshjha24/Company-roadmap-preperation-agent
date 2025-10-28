@@ -95,8 +95,9 @@ pip install langchain-google-genai pydantic python-dotenv
 Run the Agent
 python roadmap_agent.py
 
+
 🧾 Example Outputs
-<details> <summary>🧠 Google Example Output</summary>
+ Google Example Output
 
 {
     "company": "Google",
@@ -123,4 +124,3 @@ python roadmap_agent.py
         "Behavioral Interview Preparation"
     ]
 }
-</details>
