@@ -94,33 +94,3 @@ pip install langchain-google-genai pydantic python-dotenv
 
 Run the Agent
 python roadmap_agent.py
-
-
-🧾 Example Outputs
- Google Example Output
-
-{
-    "company": "Google",
-    "role": "Software Development Engineer (SDE) - L3",
-    "rounds": [
-        {
-            "type": "Technical Coding",
-            "topics": ["Data Structures and Algorithms", "Greedy Algorithms", "Dynamic Programming", "Graphs"]
-        },
-        {
-            "type": "System Design",
-            "topics": ["Distributed Systems", "Scaling", "Microservices Architecture", "Load Balancing"]
-        },
-        {
-            "type": "Behavioral",
-            "topics": ["Googliness & Leadership", "Communication", "Conflict Resolution"]
-        }
-    ],
-    "difficulty": "Hard",
-    "recommended_order": [
-        "Data Structures and Algorithms",
-        "System Design Fundamentals",
-        "Python/Go Language Syntax",
-        "Behavioral Interview Preparation"
-    ]
-}
