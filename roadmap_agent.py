@@ -66,12 +66,12 @@ def create_roadmap_agent(llm_name: str = "gemini-2.5-flash-preview-09-2025") -> 
         You are a world-class AI Career Preparation Agent. Your task is to generate a comprehensive, structured interview preparation roadmap.
         
         Follow these mandatory steps:
-        1. **Parse the Job Description (JD):** Extract required technical skills, tools, and responsibilities. Map these extracted keywords to general preparation topics (e.g., 'TensorFlow' -> 'Deep Learning', 'REST API' -> 'Backend Development').
-        2. **Company Research:** Use the `Google Search` tool to gather current, real-world information about the interview process, round types, and expected difficulty for the given Company and Role. This is mandatory for grounding the analysis.
-        3. **Synthesize & Structure:** Combine the JD analysis (Step 1) and external research (Step 2) to accurately fill the required JSON schema ({PreparationRoadmap.__name__}).
-            - **Rounds:** Predict the typical rounds (e.g., Coding, System Design) and populate the most likely topics for each round.
-            - **Difficulty:** Predict the overall difficulty ('Easy', 'Medium', or 'Hard').
-            - **Recommended Order:** Suggest a logical, sequential order of preparation domains.
+        1. Parse the Job Description (JD) : Extract required technical skills, tools, and responsibilities. Map these extracted keywords to general preparation topics (e.g., 'TensorFlow' -> 'Deep Learning', 'REST API' -> 'Backend Development').
+        2. Company Research: Use the `Google Search` tool to gather current, real-world information about the interview process, round types, and expected difficulty for the given Company and Role. This is mandatory for grounding the analysis.
+        3. Synthesize & Structure : Combine the JD analysis (Step 1) and external research (Step 2) to accurately fill the required JSON schema ({PreparationRoadmap.__name__}).
+            - Rounds : Predict the typical rounds (e.g., Coding, System Design) and populate the most likely topics for each round.
+            - Difficulty : Predict the overall difficulty ('Easy', 'Medium', or 'Hard').
+            - Recommended Order : Suggest a logical, sequential order of preparation domains.
         
         The final output MUST be a valid JSON object matching the requested schema.
         """
@@ -88,13 +88,15 @@ def create_roadmap_agent(llm_name: str = "gemini-2.5-flash-preview-09-2025") -> 
         return None
     
 if __name__ == "__main__":
-    sample_company = "Amazon"
-    sample_role = "Applied Scientist"
+    sample_company = "Google"
+    sample_role = "Software Development Engineer (SDE) - L3"
     sample_jd = """
-    We seek an Applied Scientist with expertise in large-scale deep learning models.
-     Must have experience with PyTorch/TensorFlow, model optimization, MLOps, and
-    deploying models using cloud services (AWS SageMaker). PhD preferred, strong
-    publication record a plus.
+    We are looking for a Software Engineer to join our core infrastructure team.
+Responsibilities include designing, developing, and deploying high-volume, low-latency services
+using Python and Go. Candidates must have a strong foundation in Data Structures and Algorithms (DSA),
+System Design principles (microservices, distributed caches), and expertise in designing and
+implementing RESTful APIs. Experience with cloud platforms (GCP, AWS) is a plus.
+Excellent communication skills and behavioral fit are essential.
     """
 
     print("--- Interview Roadmap Generation Agent Initialized ---")

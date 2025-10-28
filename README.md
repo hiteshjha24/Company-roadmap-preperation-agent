@@ -94,6 +94,9 @@ Example Output (JSON)
 
 The final output is a beautiful, structured JSON object:
 
+<<----Google---->>
+
+
 {
     "company": "Google",
     "role": "Software Development Engineer (SDE) - L3",
@@ -117,5 +120,73 @@ The final output is a beautiful, structured JSON object:
         "System Design Fundamentals",
         "Python/Go Language Syntax",
         "Behavioral Interview Preparation"
+    ]
+}
+
+
+
+<<----Amazon---->>
+
+{
+    "company": "Amazon",
+    "role": "Applied Scientist",
+    "rounds": [
+        {
+            "type": "Screening/Technical Deep Dive (Theory)",
+            "topics": [
+                "Probability and Statistics",
+                "Linear Algebra",
+                "Optimization Techniques (e.g., SGD, Adam)",
+                "Classic ML Algorithms (e.g., SVM, Boosting)",
+                "Deep Learning Architectures (CNNs, RNNs, Transformers)",
+                "Model Optimization and Regularization"
+            ]
+        },
+        {
+            "type": "Coding/Technical Interview",
+            "topics": [
+                "Data Structures (Arrays, Hash Maps, Trees)",
+                "Algorithms (Sorting, Searching, Dynamic Programming)",
+                "Time and Space Complexity Analysis",
+                "Implementation of ML components (e.g., custom loss functions, model layers)",
+                "Python proficiency"
+            ]
+        },
+        {
+            "type": "ML System Design",
+            "topics": [
+                "Designing and scaling a large-scale ML system (e.g., recommendation engine, search ranking)",
+                "Data pipelines and feature engineering at scale",
+                "Model deployment strategies (A/B testing, canary releases)",
+                "MLOps tools (SageMaker, Kubeflow)",
+                "Monitoring and logging in production"
+            ]
+        },
+        {
+            "type": "Cloud/Deployment Deep Dive",
+            "topics": [
+                "AWS services (SageMaker, S3, EC2, Lambda)",
+                "Deployment strategies for deep learning models",
+                "Latency and throughput optimization",
+                "Cost management for ML infrastructure"
+            ]
+        },
+        {
+            "type": "Behavioral/Bar Raiser",
+            "topics": [
+                "Amazon Leadership Principles (e.g., Ownership, Invent and Simplify, Deliver Results)",
+                "Situational questions based on past projects (STAR method)",
+                "Handling ambiguity and failure in research/development",
+                "Deep dive into publication record/PhD thesis"
+            ]
+        }
+    ],
+    "difficulty": "Hard",
+    "recommended_order": [
+        "Machine Learning Fundamentals & Deep Learning Theory",
+        "Coding & Data Structures/Algorithms",
+        "ML System Design & MLOps",
+        "AWS & Cloud Deployment",
+        "Behavioral & Leadership Principles"
     ]
 }

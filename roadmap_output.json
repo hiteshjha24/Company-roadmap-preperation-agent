@@ -1,63 +1,55 @@
 {
-    "company": "Amazon",
-    "role": "Applied Scientist",
+    "company": "Google",
+    "role": "Software Development Engineer (SDE) - L3",
     "rounds": [
         {
-            "type": "Screening/Technical Deep Dive (Theory)",
+            "type": "Coding (Technical Screen)",
             "topics": [
-                "Probability and Statistics",
-                "Linear Algebra",
-                "Optimization Techniques (e.g., SGD, Adam)",
-                "Classic ML Algorithms (e.g., SVM, Boosting)",
-                "Deep Learning Architectures (CNNs, RNNs, Transformers)",
-                "Model Optimization and Regularization"
+                "Arrays, Strings, Hash Maps",
+                "Trees, Graphs, Heaps",
+                "Dynamic Programming, Greedy Algorithms",
+                "Time and Space Complexity Analysis"
             ]
         },
         {
-            "type": "Coding/Technical Interview",
+            "type": "Coding (Onsite 1)",
             "topics": [
-                "Data Structures (Arrays, Hash Maps, Trees)",
-                "Algorithms (Sorting, Searching, Dynamic Programming)",
-                "Time and Space Complexity Analysis",
-                "Implementation of ML components (e.g., custom loss functions, model layers)",
-                "Python proficiency"
+                "Advanced DSA (e.g., DP, Graph Algorithms)",
+                "Language-specific features (Python/Go)",
+                "Code quality, testing, and debugging"
             ]
         },
         {
-            "type": "ML System Design",
+            "type": "System Design (Onsite 2)",
             "topics": [
-                "Designing and scaling a large-scale ML system (e.g., recommendation engine, search ranking)",
-                "Data pipelines and feature engineering at scale",
-                "Model deployment strategies (A/B testing, canary releases)",
-                "MLOps tools (SageMaker, Kubeflow)",
-                "Monitoring and logging in production"
+                "Microservices architecture",
+                "Distributed Caches (e.g., Memcached, Redis)",
+                "Load Balancing, Sharding, Consistency models",
+                "Designing RESTful APIs (high-volume, low-latency)"
             ]
         },
         {
-            "type": "Cloud/Deployment Deep Dive",
+            "type": "Behavioral (Googliness & Leadership)",
             "topics": [
-                "AWS services (SageMaker, S3, EC2, Lambda)",
-                "Deployment strategies for deep learning models",
-                "Latency and throughput optimization",
-                "Cost management for ML infrastructure"
+                "Leadership Principles (e.g., 'Tell me about a time...')",
+                "Conflict resolution, teamwork, and project ownership",
+                "Googliness and behavioral fit"
             ]
         },
         {
-            "type": "Behavioral/Bar Raiser",
+            "type": "Technical Deep Dive / Managerial",
             "topics": [
-                "Amazon Leadership Principles (e.g., Ownership, Invent and Simplify, Deliver Results)",
-                "Situational questions based on past projects (STAR method)",
-                "Handling ambiguity and failure in research/development",
-                "Deep dive into publication record/PhD thesis"
+                "Deep dive into past projects and technical challenges",
+                "Scenario-based problem-solving (e.g., debugging a production issue)",
+                "Role-specific technical questions (Python/Go, Infrastructure)"
             ]
         }
     ],
     "difficulty": "Hard",
     "recommended_order": [
-        "Machine Learning Fundamentals & Deep Learning Theory",
-        "Coding & Data Structures/Algorithms",
-        "ML System Design & MLOps",
-        "AWS & Cloud Deployment",
-        "Behavioral & Leadership Principles"
+        "Data Structures and Algorithms",
+        "System Design Fundamentals",
+        "Core Programming (Python/Go)",
+        "Behavioral and Leadership Principles"
     ]
 }
